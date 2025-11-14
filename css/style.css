@@ -1,3 +1,54 @@
+:root {
+  --bs-success: #198754;
+  --color-earth: #964B00;
+  --color-light-bd: #F5F5DC;
+}
 
+body {
+  background-color: var(--color-light0bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.navbar-brand {
+  color: var(--bs-success) !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #212529;
+  color: var(--color-light-bg);
+  padding: 2rem 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+}
+footer a {
+  color: #CCC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: var(--bs-success);
+}
+footer .footer-text {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.btn-success {
+  box-shadow: 0 4px 6px rgba(25, 135, 84, 0.5);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.btn-success:hover {
+  box-shadow: 0 6px 8px rgba(25, 135, 84, 0.5);
+  transform: translateY(-1px);
+}
 
 /*# sourceMappingURL=style.css.map */
