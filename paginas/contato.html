@@ -1,0 +1,79 @@
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <header class="text-center mb-5">
+                <h1 class="display-6 fw-bold text-success">
+                    Fale conosco
+                </h1>
+                <p class="lead text-muted">
+                    A tocaria & Terrenos S.A. está sempre pronta para ouvir você. Seja para tirar dúvidas, receber
+                    sugestões ou solicitar suporte, nossa equipe está a disposição para ajudar. Entre em contato conosco
+                    através dos canais abaixo e teremos o maior prazer em atendê-lo.
+                </p>
+            </header>
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4 p-md-5">
+                    <h2 class="card-title text-center mb-4 text-secondary">
+                        Envie sua consulta
+                    </h2>
+                    <form id="formContato" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold">
+                                Nome Completo
+                            </label>
+                            <input type="text" class="form-control" id="nome" required minlength="5">
+                            <div class="invalid-feedback">
+                                Por favor, insira seu nome completo (mínimo 5 caracteres).
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">
+                                Endereço de e-mail
+                            </label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Por favor, insira um endereço de email válido.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="interesse" class="form-label fw-bold">
+                                Assunto
+                            </label>
+                            <select class="form-select" id="interesse" required>
+                                <option value="" Selected disabled>Selecione uma opção:</option>
+                                <option value="toca">Listagem de Tocas</option>
+                                <option value="terreno">Compra ou Venda de Terrenos</option>
+                                <option value="servico">Serviços de Manutenção</option>
+                                <option value="outros">Outros Assuntos</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor, selecione um assunto.
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensagem" class="form-label fw-bold">
+                                Sua Mensagem
+                            </label>
+                            <textarea class="form-control" id="mensagem" rows="4" required minlength="10">
+                            </textarea>
+                            <div class="invalid-feedback">
+                                Por favor, insira a sua mensagem (mínimo 10 caracteres).
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-sucess btn-lg">
+                                Enviar pedido de contato
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="index.html" class="text-success text-decoration-none small">
+                    &larr; Voltar para a página inicial
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../../js/contato.js"></script>
